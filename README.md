@@ -29,7 +29,7 @@ Everything below is open source, tested, and built so a stranger can run it in m
 > |---|---|
 > | **50 / 50** | hostile calls blocked by the rule meant to catch them (injection exfiltration, destructive SQL, shell, credential theft, encoding evasion, scope escape) |
 > | **0 / 40** | false positives on ordinary work (0.0%) |
-> | **161 / 311 / 424 µs** | p50 / p95 / p99 decision latency, no model, no network |
+> | **161 / 311 / 424 µs** | p50 / p95 / p99 decision latency on the reference run (p99 under 0.5 ms in every run), no model, no network |
 >
 > The README carries a threat-model boundary table: what a pre-execution guard catches in under half a millisecond, and what only tool scoping and isolation can stop.
 
